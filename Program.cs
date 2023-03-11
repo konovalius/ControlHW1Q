@@ -14,3 +14,12 @@ void FilteringArray(string[] FirstArray, string[] SecondArray)
         }
     }
 }
+
+void PrintArray (string []Array)
+{
+    for (int i=0;i<Array.Length;i++)
+    {
+        Console.Write($" {array[i]} ");
+    }
+    Console.WriteLine();
+}
