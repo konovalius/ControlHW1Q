@@ -1,6 +1,8 @@
-﻿string[] Array = new { "west", "go", "gz5", "do", ":-)" };
-string[] FilterArray = new string[];
+﻿string[] Array = { "west", "go", "gz5", "door", ":-)" };
+string[] FilterArray = new string [Array.Length];
 
+FilteringArray(Array, FilterArray);
+PrintArray(FilterArray);
 
 void FilteringArray(string[] FirstArray, string[] SecondArray)
 {
@@ -9,17 +11,17 @@ void FilteringArray(string[] FirstArray, string[] SecondArray)
     {
         if (FirstArray[i].Length <= 3)
         {
-            SecondArray[k]=FirstArray[i];
+            SecondArray[k] = FirstArray[i];
             k++;
         }
     }
 }
 
-void PrintArray (string []Array)
+void PrintArray(string[] Array)
 {
-    for (int i=0;i<Array.Length;i++)
+    for (int i = 0; i < Array.Length; i++)
     {
-        Console.Write($" {array[i]} ");
+        Console.Write($" {Array[i]} ");
     }
     Console.WriteLine();
 }
